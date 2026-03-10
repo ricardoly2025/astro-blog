@@ -1,0 +1,28 @@
+---
+const {title, description} = Astro.props
+---
+
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>{title}</title>
+<meta name="description" content={description}>
+
+<link rel="stylesheet" href="/src/styles/global.css">
+
+<!-- Adsense -->
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<slot />
+
+</body>
+</html>
