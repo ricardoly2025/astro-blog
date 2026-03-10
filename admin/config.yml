@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: usuario/repositorio
+
+media_folder: "public/images"
+
+collections:
+  - name: "blog"
+    label: "Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Descrição", name: "description", widget: "string"}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}
