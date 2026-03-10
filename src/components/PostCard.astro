@@ -1,0 +1,15 @@
+---
+const {post} = Astro.props
+---
+
+<article class="card">
+
+<h2>
+<a href={`/post/${post.slug}`}>
+{post.data.title}
+</a>
+</h2>
+
+<p>{post.data.description}</p>
+
+</article>
